@@ -1,0 +1,57 @@
+# Source files
+src/
+tests/
+examples/
+scripts/
+
+# Configuration files
+*.config.js
+*.config.ts
+.eslintrc.*
+.prettierrc.*
+tsconfig*.json
+
+# Development files
+.nyc_output/
+coverage/
+.npm/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+
+# Documentation source files
+*.md
+!README.md
+!LICENSE
+!PERFORMANCE.md
+
+# Git files
+.git/
+.gitignore
+
+# CI/CD files
+.github/
+.gitlab-ci.yml
+
+# Claude files
+.claude/
