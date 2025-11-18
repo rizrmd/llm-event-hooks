@@ -73,21 +73,21 @@
     "real-time"
   ],
   "author": {
-    "name": "AI Base Team",
-    "email": "contact@example.com",
-    "url": "https://github.com/your-org/llm-event-hooks"
+    "name": "Riz MD",
+    "email": "riz@example.com",
+    "url": "https://github.com/rizrmd"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/llm-event-hooks.git"
+    "url": "https://github.com/rizrmd/llm-event-hooks.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/llm-event-hooks/issues"
+    "url": "https://github.com/rizrmd/llm-event-hooks/issues"
   },
-  "homepage": "https://github.com/your-org/llm-event-hooks#readme",
+  "homepage": "https://github.com/rizrmd/llm-event-hooks#readme",
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/your-org"
+    "url": "https://github.com/sponsors/rizrmd"
   }
 }
