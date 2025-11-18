@@ -581,15 +581,33 @@ export class HookableLLM {
   }
 
   getHistory(): ConversationHistoryType {
-    // Return current state - in a real implementation, this would be more comprehensive
-    return {
-      conversations: [],
-      metadata: {
-        version: '1.0.0',
-        exportedAt: new Date(),
-        source: 'HookableLLM'
-      }
-    };
+    // Export current conversation history
+    return this.conversationHistory.export();
+  }
+
+  // Direct access to conversation history for advanced usage
+  getConversationHistory() {
+    return this.conversationHistory;
+  }
+
+  // List all conversations
+  async listConversations(filter?: any): Promise<Conversation[]> {
+    return await this.conversationHistory.listConversations(filter);
+  }
+
+  // Get specific conversation
+  async getConversation(conversationId: string): Promise<Conversation | null> {
+    return await this.conversationHistory.getConversation(conversationId);
+  }
+
+  // Delete specific conversation
+  async deleteConversation(conversationId: string): Promise<void> {
+    return await this.conversationHistory.deleteConversation(conversationId);
+  }
+
+  // Add messages to existing conversation
+  async addMessages(conversationId: string, messages: Message[]): Promise<void> {
+    return await this.conversationHistory.addMessages(conversationId, messages);
   }
 
   async clearHistory(conversationId?: string): Promise<void> {
